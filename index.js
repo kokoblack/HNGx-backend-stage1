@@ -13,7 +13,7 @@ app.use(cors());
 //   res.send('hello!!!!!')
 // })
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   const weekday = [
     "Sunday",
     "Monday",
