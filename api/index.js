@@ -29,7 +29,7 @@ app.get("/api", (req, res) => {
   const current_day = weekday[new Date().getDay()];
   const utc_time = new Date().toUTCString().split(".")[0] + "z";
   const github_fle_url =
-    "https://github.com/kokoblack/HNGx-backend-stage1/blob/main/index.js";
+    "https://github.com/kokoblack/HNGx-backend-stage1/blob/main/api/index.js";
   const github_repo_url = "https://github.com/kokoblack/HNGx-backend-stage1";
   const status_code = 200;
 
