@@ -28,7 +28,7 @@ app.get("/api", (req, res) => {
   const track = req.query.track;
   const current_day = weekday[new Date().getDay()];
   const utc_time = new Date().toISOString().split(".")[0] + "Z";
-  const github_fle_url =
+  const github_file_url =
     "https://github.com/kokoblack/HNGx-backend-stage1/blob/main/api/index.js";
   const github_repo_url = "https://github.com/kokoblack/HNGx-backend-stage1";
   const status_code = 200;
@@ -38,7 +38,7 @@ app.get("/api", (req, res) => {
     current_day,
     utc_time,
     track,
-    github_fle_url,
+    github_file_url,
     github_repo_url,
     status_code,
   };
