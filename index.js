@@ -17,7 +17,7 @@ app.get('/?slack_name=Kaay&track=backend', (req, res) => {
     const track = req.params('backend')
     const current_day = weekday[new Date().getDay()]
     const utc_time = new Date().toUTCString().split('.')[0] + 'z'
-    const github_fle_url = 'uvdofvndof'
+    const github_fle_url = 'https://github.com/kokoblack/HNGx-backend-stage1/blob/main/index.js'
     const github_repo_url = 'https://github.com/kokoblack/HNGx-backend-stage1'
     const status_code = 200
 
