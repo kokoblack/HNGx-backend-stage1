@@ -27,7 +27,7 @@ app.get("/api", (req, res) => {
   const slack_name = req.query.slack_name;
   const track = req.query.track;
   const current_day = weekday[new Date().getDay()];
-  const utc_time = new Date().toUTCString().split(".")[0] + "z";
+  const utc_time = new Date().toISOString().split(".")[0] + "Z";
   const github_fle_url =
     "https://github.com/kokoblack/HNGx-backend-stage1/blob/main/api/index.js";
   const github_repo_url = "https://github.com/kokoblack/HNGx-backend-stage1";
